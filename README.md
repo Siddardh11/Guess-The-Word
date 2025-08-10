@@ -1,18 +1,42 @@
-# Hangman-Game
-Hangman Game (Developed in Python)
-The Hangman game is a word-guessing challenge where the player attempts to figure out a hidden word by guessing one letter at a time. The player must guess the word before the stick-figure hangman is completely drawn.
+# Guess the Word Game – Python
 
-Game Features:
-A word is selected at random for the player to guess.
-The player has a limited number of incorrect guesses, and each wrong attempt draws part of the hangman.
-Correct guesses reveal the position of the letters in the word.
-The game ends when the player successfully guesses the word or when the hangman is fully drawn.
-Technologies & Language:
-This game was built entirely using Python, a versatile programming language known for its simplicity and readability. Python’s built-in functions and control structures make it ideal for developing interactive console-based games like Hangman.
+## Description
+**Guess the Word Game** is a Python-based console game where the player must guess a hidden word within 6 chances.  
+For each correct letter guessed, the remaining chances stay the same. For each incorrect guess, the chances decrease by 1.  
+The game continues until the player guesses the entire word or runs out of chances.
 
-The game uses:
+---
 
-Random module for selecting words.
-Simple loops and conditionals to handle the game flow.
-String manipulation for checking guesses and updating the word display.
-Python was chosen for its ease of use and wide adoption, making it a perfect choice for developing a fun and educational project like this.
+## Project Overview
+The game randomly selects a word from a predefined list and displays it as underscores (`_`) representing each letter.  
+The player guesses one letter at a time:
+- If the guessed letter is in the word, it is revealed in its correct position(s).
+- If the guessed letter is not in the word, the remaining chances are reduced.
+The game ends with either:
+- **Victory** – The player correctly guesses all letters before running out of chances.
+- **Defeat** – The player fails to guess the word within 6 chances.
+
+---
+
+## Features
+- Random word selection from a predefined list.  
+- Tracks correct and incorrect guesses.  
+- Displays the current state of the word after each guess.  
+- Case-insensitive letter matching.  
+- Clear win/lose game-ending messages.
+
+---
+
+## Tools & Technologies
+- **Python** – Core programming language.  
+- **Random** module – For word selection.  
+
+---
+
+## How to Run
+1. Ensure Python is installed on your system.  
+2. Download the project files from this repository.  
+3. Open the terminal/command prompt in the project folder.  
+4. Run the game:
+   ```bash
+   python guess_the_word.py
